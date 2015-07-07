@@ -1,0 +1,35 @@
+
+<h4>Create Contact:</h4>
+
+ <%= form_for(contact) do |f| %>
+
+ <%= render 'layouts/errors', model: contact %>
+
+	<div>
+		<%= f.label :name %>
+		<br />
+		<%= f.text_field :name %>
+	</div>
+
+	<div>
+		<%= f.label :address %>
+		<br />
+		<%= f.text_field :address %>
+	</div>
+
+	<div>
+		<%= f.label :email %>
+		<br />
+		<%= f.text_field :email %>
+	</div>
+
+	<div>
+		<%= f.label :phone_number %>
+		<br />
+		<%= f.text_field :phone_number %>
+	</div>
+
+	<div>
+		<%= f.submit %>
+	</div>
+<% end %>
