@@ -1,0 +1,10 @@
+<h3>Search Results</h3>
+
+<ul>
+	<% @contacts.each do |contact| %>
+		<li>
+			<%= link_to contact.show_name, contact_path(contact) %>
+		</li>
+
+	<% end %>
+</ul>

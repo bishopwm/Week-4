@@ -8,3 +8,10 @@
 
 	<% end %>
 </ul>
+
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:letter, "Search for:") %>
+  <%= text_field_tag(:letter) %>
+  <%= submit_tag("Search") %>
+<% end %>
+

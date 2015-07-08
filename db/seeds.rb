@@ -11,17 +11,19 @@ Contact.destroy_all
 
 
 Contact.create(
-	name: 'Joan', 
+	name: 'Наталья', 
 	email: 'Joaniepoo@aol.com', 
 	phone_number: '4492', 
-	address: '8 Leafy Ln'
+	address: '8 Leafy Ln',
+	status: '***favorite***'
 	)
 
 Contact.create(
-	name: 'Hagrid', 
+	name: 'Хагрид', 
 	email: 'hagridlovespopcorn@gmail.com', 
 	phone_number: '9784', 
-	address: '33 DesperatePerson Drive'
+	address: '33 DesperatePerson Drive',
+	status: '***favorite***'
 	)
 Contact.create(
 	name: 'Sallie', 
@@ -36,7 +38,7 @@ Contact.create(
 	address: '8 Wildberry Ln'
 	)
 Contact.create(
-	name: 'Chad', 
+	name: 'Чэд', 
 	email: 'toocool@forschool.com', 
 	phone_number: '3792', 
 	address: '93 Poser St'

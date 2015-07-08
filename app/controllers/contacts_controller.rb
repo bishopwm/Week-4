@@ -27,6 +27,11 @@ class ContactsController < ApplicationController
 		redirect_to '/contacts/'
 	end
 
+	def search
+		@contacts = Contact.search_by_letter(params[:letter])
+		render :search
+	end
+
 private
 
 

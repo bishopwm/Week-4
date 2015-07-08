@@ -8,3 +8,8 @@
 <p>Phone: 
 	<%= @contact.show_phone_number %>
 </p>
+<p>
+	<% if @contact.has_attribute?(:status) %>
+	<%= @contact.show_status %>
+	<% end %>
+</p>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150707130443) do
+ActiveRecord::Schema.define(version: 20150708132141) do
 
   create_table "contacts", force: :cascade do |t|
     t.string   "name"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20150707130443) do
     t.string   "email"
     t.integer  "phone_number"
     t.string   "address"
+    t.string   "status"
   end
 
   create_table "sites_controllers", force: :cascade do |t|
