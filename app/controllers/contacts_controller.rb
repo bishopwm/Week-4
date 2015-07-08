@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
- 	
+ 
  	def index
 		@contacts = Contact.last_created(20)
 	end
@@ -32,11 +32,12 @@ class ContactsController < ApplicationController
 		render :search
 	end
 
+
 private
 
 
 	def contact_params
-		params.require(:contact).permit(:name, :address, :email, :phone_number)
+		params.require(:contact).permit(:name, :address, :email, :phone_number, :avatar)
 	end
 
 

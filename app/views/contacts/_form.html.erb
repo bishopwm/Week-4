@@ -1,36 +1,44 @@
 
 <h4>Create Contact:</h4>
 
- <%= form_for(contact) do |f| %>
+ <%= form_for(contact, html: { multipart: true }) do |f| %>
 
  <%= render 'layouts/errors', model: contact %>
 
-	<div>
+	<div class="field">
 		<%= f.label :name %>
 		<br />
 		<%= f.text_field :name %>
 	</div>
 
-	<div>
+	<div class="field">
 		<%= f.label :address %>
 		<br />
 		<%= f.text_field :address %>
 	</div>
 
-	<div>
+	<div class="field">
 		<%= f.label :email %>
 		<br />
 		<%= f.text_field :email %>
 	</div>
 
-	<div>
+	<div class="field">
 		<%= f.label :phone_number %>
 		<br />
 		<%= f.text_field :phone_number %>
 	</div>
 
-	<div>
+	 <div class="field">
+    <%= f.label :avatar %>
+    <br />
+    <%= f.file_field :avatar %>
+  </div>
+
+	<div class="actions">
 		<%= f.submit %>
 	</div>
 <% end %>
+
+
 
